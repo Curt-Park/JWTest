@@ -38,7 +38,7 @@
 ```
 
 # Result
-![alt text](https://github.com/Curt-Park/JWTest/blob/master/ex_result.png "Example Result")
+![alt text](./ex_result.png?raw=true "Example Result")
 
 # Functionalities
 1. EXPECT_EQUAL(A,B): check A equals to B
