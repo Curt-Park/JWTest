@@ -21,7 +21,7 @@
      //Test Case3 Starts Here
      START_TEST_CASE("Test Case3")
          char c;
-         std::cout<<"Don's input any number"<<std::endl;
+         std::cout<<"Don't input any number"<<std::endl;
          std::cin>>c;
          if(c>='0' && c<='9')
          {   
