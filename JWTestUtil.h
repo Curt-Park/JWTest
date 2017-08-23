@@ -28,7 +28,7 @@ namespace JWTestUtil
 #else // __APPLE__ || __linux__
 	void setcolor(const char* color) 
 	{
-        std::cout<<color;
+		std::cout<<color;
 	}
 #endif
 }

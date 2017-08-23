@@ -6,7 +6,7 @@
 
 ////////////////////* Aim */////////////////////////
 // 1. Test provides as much information as possible
-// 2. Each test case is dependent from others
+// 2. Each test case is independent from others
 // 3. Test suite can run repeatedly
 // 4. Fast and Simple
 ////////////////////////////////////////////////////
