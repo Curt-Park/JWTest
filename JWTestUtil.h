@@ -21,7 +21,6 @@ namespace JWTestUtil
 #ifdef _WIN32
 	void setcolor(int color, int bgcolor=BLACK) 
 	{
-        static CONSOLE_SCREEN_BUFFER_INFO Info;
 		color &= 0xf;
 		bgcolor &= 0xf;
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), (bgcolor << 4) | color);
