@@ -70,25 +70,25 @@ protected:
 	}
 	void testInfo(const string str, const char* fileName, const int line) const
 	{
-		JWTestUtil::SETCOLOR(yellow);
+		JWTestUtil::SETCOLOR(YELLOW);
 		cout<<"TEST_INFO) "<<str<<endl;
-		JWTestUtil::SETCOLOR(white);
+		JWTestUtil::SETCOLOR(WHITE);
 	}
 	void testFail(const string str, const char* fileName, const int line)
 	{
-		JWTestUtil::SETCOLOR(red);
+		JWTestUtil::SETCOLOR(RED);
 		cout<<"TEST_FAIL) "<<str<<endl;
 		cout<<"<File: "<<fileName<<", Line "<<line<<">"<<endl;
-		JWTestUtil::SETCOLOR(white);
+		JWTestUtil::SETCOLOR(WHITE);
 		failFlag=true;
 	}
 	void checkResult(const bool result, const char* exp, const char* description, const char* fileName=__FILE__, const int line =__LINE__)
 	{
 		if(!result)
 		{
-			JWTestUtil::SETCOLOR(red);
+			JWTestUtil::SETCOLOR(RED);
 			cout<<endl<<"Error!!"<<endl;
-			JWTestUtil::SETCOLOR(white);
+			JWTestUtil::SETCOLOR(WHITE);
 			cout<<"REASON: \""<<exp<<"\" is "<<description<<endl;
 			cout<<"<File: "<<fileName<<", Line "<<line<<">"<<endl;
 			failFlag=true;
@@ -96,17 +96,17 @@ protected:
 	}
 	void printTestCaseResult()
 	{
-		switch(failFlag){
-			case true:
-				JWTestUtil::SETCOLOR(red);
-				cout<<"Test Case Failed!"<<endl;
-				JWTestUtil::SETCOLOR(white);
-				failNum++;
-				break;
-			case false:
-				cout<<"Test Completed Successfully!"<<endl;
-				successNum++;
-				break;
+		if (failFlag)
+        {
+			JWTestUtil::SETCOLOR(RED);
+			cout<<"Test Case Failed!"<<endl;
+			JWTestUtil::SETCOLOR(WHITE);
+			failNum++;
+        }
+        else
+        {
+			cout<<"Test Completed Successfully!"<<endl;
+			successNum++;
 		}
 		cout<<endl;
 		failFlag=false;

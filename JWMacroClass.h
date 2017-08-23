@@ -10,15 +10,15 @@
 		void testSuite(){\
 			init();\
 			cout<<endl;\
-			JWTestUtil::SETCOLOR(green);\
+			JWTestUtil::SETCOLOR(GREEN);\
 			cout<<"[RUN	] "<<suiteName<<" starts!"<<endl;\
-			JWTestUtil::SETCOLOR(white);
+			JWTestUtil::SETCOLOR(WHITE);
 		
 #define END_TEST_SUITE()\
-			JWTestUtil::SETCOLOR(green);\
+			JWTestUtil::SETCOLOR(GREEN);\
 			cout<<"[END	] "<<suiteName<<" end!"<<endl<<endl;\
 			cout<<"[RESULT	]"<<endl;\
-			JWTestUtil::SETCOLOR(white);\
+			JWTestUtil::SETCOLOR(WHITE);\
 			printSuiteResult();\
 		}\
 	private:\
@@ -28,9 +28,8 @@
 #define START_TEST_CASE(TEST_NAME)\
 		{\
 			cout<<endl<<"======TEST CASE STARTS======"<<endl;\
-			JWTestUtil::SETCOLOR(dark_white);\
-			cout<<"Test Name: <"<<TEST_NAME<<">"<<endl;\
-			JWTestUtil::SETCOLOR(white);
+			cout<<"Test Name: <"<<TEST_NAME<<">"<<endl;
+ 
 #define END_TEST_CASE()\
 			cout<<"========TEST CASE END======="<<endl;\
 			printTestCaseResult();\
