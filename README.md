@@ -38,7 +38,7 @@
 ```
 
 # Result
-![alt text](./ex_result.jpg?raw=true "Example Result")
+![ScreenShot](./ex_result.jpg?raw=true "Example Result")
 
 # Functionalities
 1. EXPECT_EQUAL(A,B): check A equals to B
